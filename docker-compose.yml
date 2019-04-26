@@ -1,5 +1,5 @@
 version: "3"
- 
+
 services:
   miservicio_mysql:
     image: mysql:5.7
@@ -11,19 +11,25 @@ services:
     volumes:
       # Montamos un volumen para MySQL para no perder los datos de bd
       - ./volumenes/mysql:/var/lib/mysql
-    expose:
-      - 3306
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
-   
+    networks:
+      - mired
+
   miservicio_php:
-    image: php:7-apache
+    build: docker-images/php-apache
+    # Nombre arbitrario:
+    image: mi-php:7-apache
     volumes:
       # Montamos nuestra web desde fuera en el directorio web del contenedor
       - ./miweb/:/var/www/html
-    expose:
-      - 80
     ports:
       - 80:80
-    links: 
+    links:
       - miservicio_mysql
+    networks:
+      - mired
+
+networks:
+  mired:
