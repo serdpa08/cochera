@@ -1,1 +1,10 @@
-ActualizarÃ© esto con las instrucciones de lo que teneis que hacer para poder ver los cambios vosotros o si quereis hacer vosotros cambios.
+Actualizaré esto con las instrucciones de lo que teneis que hacer para poder ver los cambios vosotros o si quereis hacer vosotros cambios.
+pasos en linux:
+1. sudo apt install git
+2. sudo apt install docker 
+3. sudo apt install docker-compose
+4. os situais en el directorio warhammer 40000 (cd warhammer40000)
+5. docker-compose up -d
+
+Para apagar:
+docker-compose down 
