@@ -1,0 +1,76 @@
+body{
+    background-image: url("../imagenes/fondo2.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    color: white;
+}
+
+
+header img{
+	height: 300px;
+    width: 100%;
+
+}
+#page_wrapper{
+	position: relative;
+	height: 100%;
+}
+
+.footer{
+	text-align: center;
+	color: white;
+	background: grey;
+	opacity: 0.7;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+#ejercitos, #facciones, #bandos{
+	display: inline-block;
+	width: 30%;
+	margin-left: 3%;
+	text-align: center;
+}
+
+.ejercitos{
+	padding: 20px;
+	background-image: url("../imagenes/icono1.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.facciones{
+	padding: 20px;
+	background-image: url("../imagenes/icono2.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bandos{
+	padding: 20px;
+	background-image: url("../imagenes/icono3.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.enviar_wrapper{
+	text-align: center;
+}
+
+.enviar{
+	text-align: center;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.enviar:hover{
+	background: white;
+	opacity: 0.5;
+	color: black;
+	
+}
+
+.enviar input{
+	padding: 20px;
+}

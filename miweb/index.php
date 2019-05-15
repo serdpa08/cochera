@@ -1,4 +1,21 @@
-<?php
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>warhammer 40000</title>
+</head>
+<body>
+
+<div id="page_wrapper">
+	
+<header>
+    <img  src="imagenes/warhammer-40k-logo.png">
+</header>
+
+
+
+    <?php
 
 $pdo = null;
 try {
@@ -12,36 +29,47 @@ while ($row = $stmt->fetch()) {
 }
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>fechas</title>
-</head>
-<body>
 
-	<p>Warhammer 40000</p>
+<form id="formulario" method="get">
+    <div id="ejercitos">
+    <label>EJERCITOS </label><br>
+    <select class="ejercitos">
+        <option>Elfos</option>
+        <option>Humanos</option>
+        <option>Robots</option>
+    </select>
+    </div>
 
-	<script type="text/javascript">
-		function validarFechaMenorActual(date){
-      var x=new Date();
-      var fecha = date.split("/");
-      x.setFullYear(fecha[2],fecha[1]-1,fecha[0]);
-      var today = new Date();
+    <div id="facciones">
+    <label>FACCIONES</label><br>
+    <select class="facciones">
+        <option>Elfos</option>
+        <option>Humanos</option>
+        <option>Robots</option>
+    </select>
+    </div>
 
-      if (x >= today) {
-      	alert("fech");
-        return false;
-      }
-      else {
-        return true;
-      }
-}
+    <div id="bandos">
+    <label >BANDOS </label><br>
+    <select class="bandos">
+        <option>Elfos</option>
+        <option>Humanos</option>
+        <option>Robots</option>
+    </select>
+    </div>
+    <div class="enviar_wrapper">
+    <div class="enviar">
+        
+        <input type="submit" name="ENVIAR">
+    </div>
+</div>
 
-	</script>
-
-	<label>¿Para cuándo necesita su pedido?</label><br>
-	&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="fecha" id="fecha_estimada">
-	<input type="submit" name="submit" src="imagenes/check-verde.png">
+	
+</form>
+</div>
+ <footer class="footer">
+     <p>@copyright Buitre & CO.</p>
+ </footer>   
 
 </body>
 </html>
