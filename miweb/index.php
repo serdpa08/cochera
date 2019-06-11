@@ -6,16 +6,34 @@
 	<title>warhammer 40000</title>
 </head>
 <body>
+	
 
 <div id="page_wrapper">
 	
 <header>
     <img  src="imagenes/warhammer-40k-logo.png">
+    <nav>
+    	<ul>
+    		<li><a href="index.php" style="text-decoration: none; float: left; padding: 0px;"><img src="imagenes/icono-home.png" style="width: 20px; height: 20px; "></a></li>
+    		<li><a href="caos.php">CHAOS</a></li>
+    		<li><a href="imperium.php">IMPERIUM</a></li>
+    		<li><a href="xeros.php">XENOS</a></li>
+
+            <span>
+            <li><input type="text" name="nombre" placeholder="usuario"></li>
+            <li><input type="password" name="password" placeholder="contraseña"></li>
+            <li><button type="submit" id="usuario">log in</button></li>
+            <li><a href="registroUsuarios.php">Registrarse</a></li>
+
+            </span>
+    	</ul>
+    </nav>
 </header>
 
 
 
     <?php
+    /*
 
 $pdo = null;
 try {
@@ -27,45 +45,35 @@ $stmt = $pdo->query('SELECT * FROM `usuarios`');
 while ($row = $stmt->fetch()) {
     printf("%s, %s<br />", $row['apellidos'], $row['nombre']);
 }
-
+*/
 ?>
+	
+	<div class="image_wrapper">
+	<a href="caos.php">
+    <div class="ejercitos" id="ejercitos">
+    <label>CHAOS </label><br>
+    
+    
+    </div>
+    </a>
+    <a href="imperium.php">
+    <div class="facciones" id="facciones">
+    <label>IMPERIUM</label><br>
 
-<form id="formulario" method="get">
-    <div id="ejercitos">
-    <label>EJERCITOS </label><br>
-    <select class="ejercitos">
-        <option>Elfos</option>
-        <option>Humanos</option>
-        <option>Robots</option>
-    </select>
+    
     </div>
-
-    <div id="facciones">
-    <label>FACCIONES</label><br>
-    <select class="facciones">
-        <option>Elfos</option>
-        <option>Humanos</option>
-        <option>Robots</option>
-    </select>
+    </a>
+    <a href="xeros.php">
+    <div class="bandos" id="bandos">
+    <label >XENOS </label><br>
+    
     </div>
-
-    <div id="bandos">
-    <label >BANDOS </label><br>
-    <select class="bandos">
-        <option>Elfos</option>
-        <option>Humanos</option>
-        <option>Robots</option>
-    </select>
-    </div>
-    <div class="enviar_wrapper">
-    <div class="enviar">
-        
-        <input type="submit" name="ENVIAR">
-    </div>
+    </a>
 </div>
 
+
 	
-</form>
+
 </div>
  <footer class="footer">
      <p>@copyright Buitre & CO.</p>

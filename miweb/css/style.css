@@ -11,9 +11,43 @@ header img{
     width: 100%;
 
 }
+
+nav{
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	
+
+
+}
+
+
+nav li{
+	display: inline;
+	
+	width: 100%;
+}
+nav a{
+	color: white;
+	text-decoration: none;
+	padding: 30px;
+
+}
+
+nav a:hover{
+	background: white;
+	color:grey;
+	
+}
+
+
 #page_wrapper{
 	position: relative;
 	height: 100%;
+
 }
 
 .footer{
@@ -27,32 +61,53 @@ header img{
 	width: 100%;
 }
 
+.image_wrapper{
+	margin: 0 auto;
+	width: 100%;
+	
+}
+
+
 #ejercitos, #facciones, #bandos{
 	display: inline-block;
-	width: 30%;
+	margin: 0 auto;
 	margin-left: 3%;
 	text-align: center;
+	border-radius: 1px solid black;
+
+
 }
 
 .ejercitos{
+	width: 25%;
 	padding: 20px;
 	background-image: url("../imagenes/icono1.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	height: 200px;
+	display: inline-block;
 }
 
 .facciones{
+	width: 25%;
 	padding: 20px;
 	background-image: url("../imagenes/icono2.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	height: 200px;
+	display: inline-block;
+	
 }
 
 .bandos{
+	width: 25%;
 	padding: 20px;
 	background-image: url("../imagenes/icono3.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	height: 200px;
+
+	display: inline-block;
 }
 .enviar_wrapper{
 	text-align: center;
@@ -74,3 +129,101 @@ header img{
 .enviar input{
 	padding: 20px;
 }
+.sliderwrapper{
+	width: 80%;
+	margin: 0 auto
+}
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 50%;
+	height: 50%;
+	margin-top: 100px;
+	margin-left: 250px;
+
+
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+@media only screen and (max-width: 480px){
+
+
+	nav li {
+		display: block;
+		width: 90%;
+		height: 5px;
+		text-align: center;
+		padding: 20px;
+
+		
+
+	}
+
+	
+	
+	.page_wrapper{
+		position: relative;
+	}
+	.image_wrapper{
+		margin-top: 200px;
+	}
+
+	.ejercitos{
+		display: block;
+		width: 80%;
+		margin-bottom: 10px;
+	}
+
+	.bandos{
+		display: block;
+		width: 80%;
+		padding: 10px;
+
+	}
+
+	.facciones{
+		display: block;
+		width: 80%;
+		margin-bottom: 10px;
+	}
+
+	footer{
+		display: none;
+	}
+
+
+
+}
+
+
