@@ -51,21 +51,21 @@ while ($row = $stmt->fetch()) {
 	<div class="image_wrapper">
 	<a href="caos.php">
     <div class="ejercitos" id="ejercitos">
-    <label>CHAOS </label><br>
+    <h2 style="color: black; opacity: 0.7; background: white; ">CHAOS </h2><br>
     
     
     </div>
     </a>
     <a href="imperium.php">
     <div class="facciones" id="facciones">
-    <label>IMPERIUM</label><br>
+    <h2 style="color: black; opacity: 0.7; background: white; ">IMPERIUM</h2><br>
 
     
     </div>
     </a>
     <a href="xeros.php">
     <div class="bandos" id="bandos">
-    <label >XENOS </label><br>
+    <h2 style="color: black; opacity: 0.7; background: white; ">XENOS </h2><br>
     
     </div>
     </a>

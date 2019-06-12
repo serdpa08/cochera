@@ -81,7 +81,7 @@ nav a:hover{
 .ejercitos{
 	width: 25%;
 	padding: 20px;
-	background-image: url("../imagenes/icono1.jpeg");
+	background-image: url("../imagenes/Bando_Chaos1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 200px;
@@ -91,7 +91,7 @@ nav a:hover{
 .facciones{
 	width: 25%;
 	padding: 20px;
-	background-image: url("../imagenes/icono2.jpeg");
+	background-image: url("../imagenes/Bando_Imperio1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 200px;
@@ -102,12 +102,23 @@ nav a:hover{
 .bandos{
 	width: 25%;
 	padding: 20px;
-	background-image: url("../imagenes/icono3.jpeg");
+	background-image: url("../imagenes/Bando_Xenos1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 200px;
 
 	display: inline-block;
+}
+.ejercitos:hover{
+	box-shadow: 10px -4px 8px 1px rgba(255,255,255,1);
+}
+
+.facciones:hover{
+	box-shadow: 10px -4px 8px 1px rgba(255,255,255,1);
+}
+
+.bandos:hover{
+	box-shadow: 10px -4px 8px 1px rgba(255,255,255,1);
 }
 .enviar_wrapper{
 	text-align: center;
@@ -145,7 +156,7 @@ nav a:hover{
 	padding: 0;
 	width: 400%;
 	
-	animation: cambio 20s infinite alternate linear;
+	animation: cambio 10s infinite alternate linear;
 }
 
 .slider li {
@@ -154,10 +165,12 @@ nav a:hover{
 }
 
 .slider img {
+	
+	
 	width: 50%;
 	height: 50%;
 	margin-top: 100px;
-	margin-left: 250px;
+	margin-left: 25%;
 
 
 }
@@ -175,10 +188,15 @@ nav a:hover{
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
+#datos{
+	display: none;
+}
 
 @media only screen and (max-width: 480px){
 
-
+	header{
+		height: 30px;
+	}
 	nav li {
 		display: block;
 		width: 90%;

@@ -4,7 +4,7 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body style="background-image: url(imagenes/Fondocaos8.jpg); ">
 
 	<header>
     
@@ -30,23 +30,30 @@
 <div class="slider">
 <ul>
 <li>
-<img src="imagenes/demon.png" >
+<a href="demon.php">
+<img src="imagenes/Chaos/VIG-ChaosDaemons.png" >
+</a>
 </li>
 
 <li>
-<img src="imagenes/marine.png" >
+<img src="imagenes/Chaos/VIG-ChaosSpaceMarine.png" >
 </li>
 
 <li>
-<img src="imagenes/guardia.png" >
+<img src="imagenes/Chaos/VIG-DeatGuard.png" >
 </li>
 
 <li>
-<img src="imagenes/hijo.png" >
+<img src="imagenes/Chaos/VIG-ThousandSons.png" >
 </li>
 
 </ul>
 </div>
+
 </div>
+
+<footer class="footer">
+     <p>@copyright Buitre & CO.</p>
+ </footer> 
 </body>
 </html>

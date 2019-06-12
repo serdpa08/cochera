@@ -4,7 +4,7 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body style="background-image: url(imagenes/fondoImperium.png); ">
 
 	<header>
     
@@ -25,5 +25,35 @@
     </nav>
 </header>
 
+<div class="slider_wrapper">
+
+<div class="slider">
+<ul>
+<li>
+<a href="demon.php">
+<img src="imagenes/Chaos/VIG-ChaosDaemons.png" >
+</a>
+</li>
+
+<li>
+<img src="imagenes/Chaos/VIG-ChaosSpaceMarine.png" >
+</li>
+
+<li>
+<img src="imagenes/Chaos/VIG-DeatGuard.png" >
+</li>
+
+<li>
+<img src="imagenes/Chaos/VIG-ThousandSons.png" >
+</li>
+
+</ul>
+</div>
+
+</div>
+
+<footer class="footer">
+     <p>@copyright Buitre & CO.</p>
+ </footer> 
 </body>
 </html>
