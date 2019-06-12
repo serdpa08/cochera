@@ -4,7 +4,7 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body style="background-image: url(imagenes/Fondocaos8.jpg); ">
+<body style="background-image: url(imagenes/FondoCaos8.jpg); ">
 
 	<header>
     
