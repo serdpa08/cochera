@@ -45,7 +45,32 @@ class CrudClientes
 
 
     }
+
+    public function buscar($codigo){
+
+        $conexion = (new Conexion())->conectar();
+        $parametros = array(':codigo'=> $codigo);
+
+        $pdo= $conexion->prepare("SELECT * FROM clientes WHERE codigo=:codigo");
+        $pdo->execute($parametros);
+
+        if ($pdo->rowCount() == 0){
+            return null;
+        }
+        $row = $pdo->fetch(PDO::FETCH_ASSOC);
+        $cliente = new Cliente($row['codigo'], $row['nombre'], $row['sexo'], $row['edad'], $row['deuda'] );
+
+        return $cliente;
+    }
+
+}
+$accion = new CrudClientes();
+if (isset($_POST['agregar'])){
+
+    $accion->registro();
 }
 
-$registrar = new CrudClientes();
-$registrar->registro();
+if (isset($_POST['buscar'])){
+    $accion->buscar($_POST['codigo']);
+}
+
