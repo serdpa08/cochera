@@ -1,5 +1,5 @@
-<?php
-require_once ("CrudClientes.php");
+<?
+    require_once ("constantes.php");
 ?>
 
 <html>
@@ -8,7 +8,7 @@ require_once ("CrudClientes.php");
 </head>
 <body>
 <form method="post" action= "CrudClientes.php?">
-    <input type="hidden" name="agregar">
+    <input type="hidden" name="operacion" value="<? echo OPERACIONES['AGREGAR']; ?>">
     <label>Nombre</label>
     <input type="text" name="nombre"><br>
     <label>Sexo</label>

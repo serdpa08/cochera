@@ -2,6 +2,7 @@
 
 require_once ("Conexion.php");
 require_once ("Cliente.php");
+require_once("constantes.php");
 class CrudClientes
 {
     public function __construct()
@@ -48,4 +49,15 @@ class CrudClientes
 }
 
 $registrar = new CrudClientes();
-$registrar->registro();
+if (isset($_POST['operacion']) && !empty($_POST['operacion'])) {
+    $operacion = $_POST['operacion'];
+    switch($operacion) {
+        case OPERACIONES['AGREGAR']:
+            $registro = $registrar->registro();
+            // TODO devolver html en función del resultado del registro.
+            readfile('index.html');
+            break;
+        // TODO Seguir añadiendo casos y uno por defecto.
+    }
+}
+
